@@ -3,19 +3,53 @@ Template Name: PT Sumber Alfaria Trijaya Tbk
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 
-
-.headline-yellow{
-    background: #fbd449;
-    width: 160px;
-    padding: 6px;
-    border-radius: 100px;
-    font-weight: 600;
-    color: #675000 !important;
-    text-align: center;
+.headline-yellow {
+  background: #fbd449;
+  padding: 6px;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #675000 !important;
+  text-align: center;
 }
 
-.headline-red{
-  background: #C00000;
+.bg-none {
+  background-color: #f6f6f6 !important;
+  border: white !important;
+}
+
+.margin-monitoring {
+  margin-top: 10px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.right {
+  float: right !important;
+}
+
+.white {
+  color: white;
+}
+
+.rectangle {
+  width: 130.68px;
+  height: 32px;
+  background-color: #9b7900;
+}
+
+.green {
+  color: #04b700;
+}
+
+.td-green {
+  background-color: rgb(11, 119, 11);
+  color: rgb(50, 255, 50);
+}
+
+.headline-red {
+  background: #c00000;
   width: 280px;
   padding: 6px;
   border-radius: 100px;
@@ -24,8 +58,8 @@ Template Name: PT Sumber Alfaria Trijaya Tbk
   text-align: center;
 }
 
-.headline-green{
-  background: #1B7A43;
+.headline-green {
+  background: #1b7a43;
   width: 280px;
   padding: 6px;
   border-radius: 100px;
@@ -34,8 +68,8 @@ Template Name: PT Sumber Alfaria Trijaya Tbk
   text-align: center;
 }
 
-.headline-blue{
-  background: #0068AD;
+.headline-blue {
+  background: #0068ad;
   width: 280px;
   padding: 6px;
   border-radius: 100px;
@@ -44,8 +78,8 @@ Template Name: PT Sumber Alfaria Trijaya Tbk
   text-align: center;
 }
 
-.headline-orange{
-  background: #FCD5B5;
+.headline-orange {
+  background: #fcd5b5;
   width: 280px;
   padding: 6px;
   border-radius: 100px;
@@ -53,18 +87,17 @@ Template Name: PT Sumber Alfaria Trijaya Tbk
   font-weight: 600;
   text-align: center;
 }
-    
 
-.login-p{
+.login-p {
   font-size: medium;
   color: #99abb4;
 }
 
-.font-white{
+.font-white {
   color: #fff;
 }
 
-.title-b2b{
+.title-b2b {
   margin-left: 20px;
   height: 57px;
   width: 500px;
@@ -73,22 +106,22 @@ Template Name: PT Sumber Alfaria Trijaya Tbk
   color: #614c01;
 }
 
-.line-height-b2b{
+.line-height-b2b {
   line-height: 19px;
-  color: #FFD304;
+  color: #ffd304;
   font-weight: 500;
-  }
+}
 
-.link-white{
+.link-white {
   color: #ffffff;
 }
 
-.btn-alfa{
-    border-radius: .75rem 0 .75rem 0;
-    background-color: #005da6;
-    box-shadow: 0px 0px 0px 0px #e6ae00;
-    border: 1px solid #005da6;
-    color: #fff;
+.btn-alfa {
+  border-radius: 0.75rem 0 0.75rem 0;
+  background-color: #005da6;
+  box-shadow: 0px 0px 0px 0px #e6ae00;
+  border: 1px solid #005da6;
+  color: #fff;
 }
 
 .btn-alfa:hover {
@@ -98,45 +131,44 @@ Template Name: PT Sumber Alfaria Trijaya Tbk
   color: #fff;
 }
 
-.btn-alfa:active{
+.btn-alfa:active {
   background-color: #005da6;
   box-shadow: 0px 0px 0px 0px #e6ae00;
   border: 1px solid #005da6;
   color: #fff;
 }
 
-.header-login{
+.header-login {
   background-color: #eef5f9;
   height: 400px;
 }
 
-.bg-login{
-    color: #fff;
-    margin-top: 50px;
-    text-align: center;
-
+.bg-login {
+  color: #fff;
+  margin-top: 50px;
+  text-align: center;
 }
 
-.login-form-index{
+.login-form-index {
   z-index: 2;
   margin-top: -320px;
 }
 
-.login-form{
+.login-form {
   width: 420px;
 }
 
-.line-height-05{
+.line-height-05 {
   line-height: 0.5;
 }
 
-.icons-cs{
+.icons-cs {
   color: #fff;
   padding: 8px;
   margin: 0px;
 }
 
-.rangking-b2b{
+.rangking-b2b {
   padding: 3px;
   background: #fff;
   border-radius: 20px;
@@ -144,7 +176,7 @@ Template Name: PT Sumber Alfaria Trijaya Tbk
   margin-top: 10px;
   line-height: 1.2;
 }
-.title-rankking{
+.title-rankking {
   border-radius: 11px;
   width: 197px;
   padding-left: 16px;
@@ -152,13 +184,13 @@ Template Name: PT Sumber Alfaria Trijaya Tbk
   font-weight: 500;
 }
 
-.sub-title-rangking{
+.sub-title-rangking {
   font-size: 14px;
   color: #927a31;
   padding-left: 15px;
-}    
+}
 
-.margin-0{
+.margin-0 {
   margin: 0px;
 }
 
@@ -168,37 +200,49 @@ Template Name: PT Sumber Alfaria Trijaya Tbk
   top: 0px;
   position: fixed;
   z-index: 99999;
-  background: #fff; }
-  .preloader .cssload-speeding-wheel {
-    position: absolute;
-    top: calc(50% - 3.5px);
-    left: calc(50% - 3.5px); }
+  background: #fff;
+}
+.preloader .cssload-speeding-wheel {
+  position: absolute;
+  top: calc(50% - 3.5px);
+  left: calc(50% - 3.5px);
+}
 
 /*******************
 /*Top bar
 *******************/
 .topbar {
-/*  background-image: url("images/background/bg_header.png")*/ }
-  .topbar .navbar-header {
-    background: transparent; }
-  .topbar .top-navbar .navbar-header .navbar-brand .dark-logo {
-    display: none; }
-  .topbar .top-navbar .navbar-header .navbar-brand .light-logo {
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.8); }
-  .topbar .navbar-light .navbar-nav .nav-item > a.nav-link {
-    color: #414141 !important; }
-    .topbar .navbar-light .navbar-nav .nav-item > a.nav-link:hover, .topbar .navbar-light .navbar-nav .nav-item > a.nav-link:focus {
-      color: #414141 !important; }
+  /*  background-image: url("images/background/bg_header.png")*/
+}
+.topbar .navbar-header {
+  background: transparent;
+}
+.topbar .top-navbar .navbar-header .navbar-brand .dark-logo {
+  display: none;
+}
+.topbar .top-navbar .navbar-header .navbar-brand .light-logo {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+}
+.topbar .navbar-light .navbar-nav .nav-item > a.nav-link {
+  color: #414141 !important;
+}
+.topbar .navbar-light .navbar-nav .nav-item > a.nav-link:hover,
+.topbar .navbar-light .navbar-nav .nav-item > a.nav-link:focus {
+  color: #414141 !important;
+}
 
 /*******************
 /*General Elements
 *******************/
-a.link:hover, a.link:focus {
-  color: #1976d2 !important; }
+a.link:hover,
+a.link:focus {
+  color: #1976d2 !important;
+}
 
 .bg-theme {
-  background-color: #1976d2 !important; }
+  background-color: #1976d2 !important;
+}
 
 .pagination > .active > a,
 .pagination > .active > span,
@@ -207,25 +251,32 @@ a.link:hover, a.link:focus {
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
   background-color: #1976d2;
-  border-color: #1976d2; }
+  border-color: #1976d2;
+}
 
 .right-sidebar .rpanel-title {
-  background: #1976d2; }
+  background: #1976d2;
+}
 
-.stylish-table tbody tr:hover, .stylish-table tbody tr.active {
-  border-left: 4px solid #1976d2; }
+.stylish-table tbody tr:hover,
+.stylish-table tbody tr.active {
+  border-left: 4px solid #1976d2;
+}
 
 .text-themecolor {
-  color: #5A7D8D }
+  color: #5a7d8d;
+}
 
 .profile-tab li a.nav-link.active,
 .customtab li a.nav-link.active {
   border-bottom: 2px solid #1976d2;
-  color: #1976d2; }
+  color: #1976d2;
+}
 
 .profile-tab li a.nav-link:hover,
 .customtab li a.nav-link:hover {
-  color: #1976d2; }
+  color: #1976d2;
+}
 
 /*******************
 /*Buttons
@@ -234,30 +285,41 @@ a.link:hover, a.link:focus {
 .btn-themecolor.disabled {
   background: #1976d2;
   color: #ffffff;
-  border: 1px solid #1976d2; }
-  .btn-themecolor:hover,
-  .btn-themecolor.disabled:hover {
-    background: #1976d2;
-    opacity: 0.7;
-    border: 1px solid #1976d2; }
-  .btn-themecolor.active, .btn-themecolor:focus,
-  .btn-themecolor.disabled.active,
-  .btn-themecolor.disabled:focus {
-    background: #028ee1; }
+  border: 1px solid #1976d2;
+}
+.btn-themecolor:hover,
+.btn-themecolor.disabled:hover {
+  background: #1976d2;
+  opacity: 0.7;
+  border: 1px solid #1976d2;
+}
+.btn-themecolor.active,
+.btn-themecolor:focus,
+.btn-themecolor.disabled.active,
+.btn-themecolor.disabled:focus {
+  background: #028ee1;
+}
 
 /*******************
 /*sidebar navigation
 *******************/
 .label-themecolor {
-  background: #1976d2; }
+  background: #1976d2;
+}
 
 .sidebar-nav > ul > li.active > a {
   color: #1976d2;
-  border-color: #1976d2; }
-  .sidebar-nav > ul > li.active > a i {
-    color: #1976d2; }
+  border-color: #1976d2;
+}
+.sidebar-nav > ul > li.active > a i {
+  color: #1976d2;
+}
 
-.sidebar-nav ul li a.active, .sidebar-nav ul li a:hover {
-  color: #1976d2; }
-  .sidebar-nav ul li a.active i, .sidebar-nav ul li a:hover i {
-    color: #1976d2; }
+.sidebar-nav ul li a.active,
+.sidebar-nav ul li a:hover {
+  color: #1976d2;
+}
+.sidebar-nav ul li a.active i,
+.sidebar-nav ul li a:hover i {
+  color: #1976d2;
+}
