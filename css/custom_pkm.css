@@ -1,10 +1,22 @@
 :root {
   --background-green: #c6efce;
   --text-green: #4c9750;
+  --text-green-secondary: #32c53a;
   --background-red: #ffc7ce;
   --text-red: #bd454b;
+  --text-red-secondary: #d61721;
   --background-yellow: #fcee9b;
   --text-yellow: rgb(100, 100, 100);
+}
+
+.text-green {
+  font-weight: 500;
+  color: var(--text-green-secondary);
+}
+
+.text-red {
+  font-weight: 500;
+  color: var(--text-red-secondary);
 }
 
 .td-green {
