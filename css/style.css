@@ -11,17 +11,6 @@
 @import url(../css/spinners.css);
 @import url(../css/animate.css);
 
-.text-red {
-  color: red;
-}
-
-.text-green {
-  color: green;
-}
-
-.text-blue {
-  color: blue;
-}
 
 .space-title {
   padding: 0 !important;
@@ -2378,7 +2367,6 @@ form label {
 }
 
 .page-titles h3 {
-  margin-bottom: 0px;
   margin-top: 0px;
 }
 

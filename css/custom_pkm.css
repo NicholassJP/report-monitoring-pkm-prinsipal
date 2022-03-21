@@ -1,9 +1,43 @@
 :root {
-  --first-color: #4723d9;
-  --first-color-light: #afa5d9;
-  --white-color: #f7f6fb;
-  --red-color: #ec0927;
-  --body-font: "Nunito", sans-serif;
-  --normal-font-size: 1rem;
-  --z-fixed: 100;
+  --background-green: #c6efce;
+  --text-green: #4c9750;
+  --background-red: #ffc7ce;
+  --text-red: #bd454b;
+  --background-yellow: #fcee9b;
+  --text-yellow: rgb(100, 100, 100);
+}
+
+.td-green {
+  font-weight: 500;
+  background-color: var(--background-green);
+  color: var(--text-green);
+}
+
+.td-red {
+  font-weight: 500;
+  background-color: var(--background-red);
+  color: var(--text-red);
+}
+
+.td-yellow {
+  font-weight: 500;
+  background-color: var(--background-yellow);
+  color: var(--text-yellow);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  float: right !important;
+}
+
+.btn-filter {
+  background-color: #9f8400;
+  color: white;
 }
