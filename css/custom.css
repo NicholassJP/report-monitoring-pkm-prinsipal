@@ -29,6 +29,16 @@ Template Name: PT Sumber Alfaria Trijaya Tbk
   float: right !important;
 }
 
+.btn-filter {
+  background-color: #9f8400;
+  color: white;
+}
+
+.btn-filter:hover {
+  color: white;
+  background-color: #675000;
+}
+
 .white {
   color: white;
 }
