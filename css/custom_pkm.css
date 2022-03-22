@@ -1,17 +1,30 @@
 :root {
   --background-green: #c6efce;
-  --text-green: #4c9750;
+  --text-green: #2cc229;
   --text-green-secondary: #32c53a;
   --background-red: #ffc7ce;
-  --text-red: #bd454b;
+  --text-red: #ec0f1a;
   --text-red-secondary: #d61721;
-  --background-yellow: #fcee9b;
+  --background-yellow-th: #ffd304;
+  --background-yellow-even: #ffec94;
+  --background-yellow-odd: #fff7ce;
+  --background-even: #eeeeee;
+  --background-odd: #f8f8f8;
+  --text-primary: #5a7d8d;
   --text-yellow: rgb(100, 100, 100);
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  border: 3px solid white !important;
 }
 
 .text-green {
   font-weight: 500;
-  color: var(--text-green-secondary);
+  color: var(--text-green-secondary) !important;
 }
 
 .text-red {
@@ -25,15 +38,39 @@
   color: var(--text-green);
 }
 
+.td-even {
+  font-weight: 500;
+  background-color: var(--background-even);
+  color: var(--text-primary);
+}
+
+.td-odd {
+  font-weight: 500;
+  background-color: var(--background-odd);
+  color: var(--text-primary);
+}
+
 .td-red {
   font-weight: 500;
   background-color: var(--background-red);
   color: var(--text-red);
 }
 
-.td-yellow {
+.td-yellow-even {
   font-weight: 500;
-  background-color: var(--background-yellow);
+  background-color: var(--background-yellow-even);
+  color: var(--text-primary);
+}
+
+.td-yellow-odd {
+  font-weight: 500;
+  background-color: var(--background-yellow-odd);
+  color: var(--text-primary);
+}
+
+.th-yellow {
+  font-weight: 500;
+  background-color: var(--background-yellow-th) !important;
   color: var(--text-yellow);
 }
 
