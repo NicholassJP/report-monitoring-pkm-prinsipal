@@ -14,6 +14,30 @@
   --text-yellow: rgb(100, 100, 100);
 }
 
+.chart-1{
+  color: #50B052;
+}
+
+.chart-2{
+  color: #A8D08D;
+}
+
+.chart-3{
+  color: #F8C045;
+}
+
+.chart-4{
+  color: #F4B083;
+}
+
+.chart-5{
+  color: #ADB9CA;
+}
+
+.chart-6{
+  color: #BDD6EE;
+}
+
 th {
   text-align: center;
 }

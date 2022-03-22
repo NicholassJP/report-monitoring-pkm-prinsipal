@@ -189,7 +189,7 @@
                     </div>
                 </div>
                 <!-- Row -->
-                <table class="table color-table dark-table border table-responsive1 bg-white">
+                <table class="table color-table dark-table border table-responsive1 bg-white mb-5">
                     <thead>
                         <!-- tr 1 -->
                         <tr>
@@ -347,8 +347,21 @@
                 
                 <!-- Trend Indikator Project -->
                 <div class="row page-titles space-title">
-                    <div class="space-title col-lg-4">
+                    <div class="space-title col-lg-10">
                         <h3 class="text-themecolor">Trend Indikator Project</h3>
+                    </div>
+                     <!-- Dropdown Filter -->
+                     <div class="float-right">
+                        <button type="button" class="btn btn-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-filter"></i> Filter By
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
                     </div>
                 </div>
                 <!-- Row -->
@@ -356,32 +369,81 @@
                     <!-- column -->
                     <div class="col-lg-12">
                         <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Monthly Report</h4>
-                                <div id="bar-chart" style="width:100%; height:400px;"></div>
-                            </div>
+                          <div class="card-body">
+                            <h4 class="card-title">TREND INDICATOR - PERIODE 2021</h4>
+                            <ul class="list-inline text-right">
+                                <li>
+                                  <h5>
+                                    <i class="fa fa-circle m-r-5 chart-1"></i>1-5 JAN
+                                  </h5>
+                                </li>
+                                <li>
+                                  <h5><i class="fa fa-circle m-r-5 chart-2"></i>16-31 JAN</h5>
+                                </li>
+                                <li>
+                                  <h5>
+                                    <i class="fa fa-circle m-r-5 chart-3"></i>1-15 FEB
+                                  </h5>
+                                </li>
+                                <li>
+                                    <h5>
+                                      <i class="fa fa-circle m-r-5 chart-4"></i>16-28 FEB
+                                    </h5>
+                                  </li>
+                                  <li>
+                                    <h5>
+                                      <i class="fa fa-circle m-r-5 chart-5"></i>1-15 MAR
+                                    </h5>
+                                  </li>
+                                  <li>
+                                    <h5>
+                                      <i class="fa fa-circle m-r-5 chart-6"></i>16-31 MAR
+                                    </h5>
+                                  </li>
+                              </ul>
+                            <div id="morris-bar-chart-2"></div>
+                          </div>
                         </div>
-                    </div>
+                      </div>
                     <!-- column -->
                 </div>
 
-                                <!-- Trend Indikator Project -->
+                                <!-- Rata-rata Sales per Day SKU-7 SKU Project -->
                                 <div class="row page-titles space-title">
-                                    <div class="space-title col-lg-4">
-                                        <h3 class="text-themecolor">Trend Indikator Project</h3>
+                                    <div class="space-title col-lg-5">
+                                        <h3 class="text-themecolor">Rata-rata Sales per Day SKU-7 SKU Project</h3>
                                     </div>
                                 </div>
                                 <!-- Row -->
                                 <div class="row">
-                                    <!-- column -->
+                                    <!-- Rata-rata Sales per Day SKU-7 SKU Project Chart -->
                                     <div class="col-lg-12">
                                         <div class="card">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Monthly Report</h4>
-                                                <div id="bar-chart" style="width:100%; height:400px;"></div>
-                                            </div>
+                                          <div class="card-body">
+                                            <ul class="list-inline text-right">
+                                              <li>
+                                                <h5>
+                                                  <i class="fa fa-circle m-r-5 text-inverse"></i>High Sales Low Inventory
+                                                </h5>
+                                              </li>
+                                              <li>
+                                                <h5><i class="fa fa-circle m-r-5 text-info"></i>High Sales Proper Inventory</h5>
+                                              </li>
+                                              <li>
+                                                <h5>
+                                                  <i class="fa fa-circle m-r-5 text-success"></i>Moderate Sales
+                                                </h5>
+                                              </li>
+                                              <li>
+                                                <h5>
+                                                  <i class="fa fa-circle m-r-5 text-success"></i>No Sales
+                                                </h5>
+                                              </li>
+                                            </ul>
+                                            <div id="morris-area-chart"></div>
+                                          </div>
                                         </div>
-                                    </div>
+                                      </div>
                                     <!-- column -->
                                 </div>
                 <!-- ============================================================== -->
@@ -431,6 +493,8 @@
     <!--morris JavaScript -->
     <script src="plugins/raphael/raphael-min.js"></script>
     <script src="plugins/morrisjs/morris.min.js"></script>
+    <script src="js/morris-data-trend.js"></script>
+    <script src="js/morris-data-sales.js"></script>
     <!-- sparkline chart -->
     <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
     <script src="plugins/sparkline/jquery.charts-sparkline.js"></script>
