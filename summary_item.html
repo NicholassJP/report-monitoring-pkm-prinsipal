@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/alfamart.png">
+    <title>Monitoring PKM Prinsipal</title>
+    <script src="https://kit.fontawesome.com/4619c8d9c5.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MorriesCSS -->
+    <link href="plugins/morrisjs/morris.css" rel="stylesheet">
+    
+    
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/custom_pkm.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header card-no-border logo-center">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" style="background-image: url(images/bg_header.png);">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!-- Light Logo icon -->
+                            <img src="images/logo_alfamart.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon --> 
+                     </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                         <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <!-- Title -->
+                        <div class="title-b2b">
+                            <h3 class="line-height-b2b margin-monitoring">Monitoring PKM Prinsipal</h3>
+                        </div>
+                        
+                        <!-- ============================================================== -->
+                        <!-- End Messages -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Messages -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- End Messages -->
+                        <!-- ============================================================== -->
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Profile -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/1.jpg" alt="user" class="profile-pic" /><i class="ti-angle-down icons-cs" ></i></a>
+                            <div class="dropdown-menu dropdown-menu-right scale-up">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-text">
+                                                <h3 class="text-muted">Monitoring PKM Prinsipal</h3>
+                                                <h4>Nutricia</h4>
+                                                <p class="text-muted">Ranking Prinsipal : 10</p>
+                                                <p class="text-muted">Loading Data : 96%</p>
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="index.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li> <a class="has-arrow waves-effect" href="summary_perfomance.html"><i class="mdi mdi-chart-areaspline"></i><span class="hide-menu ">Summary Perfomance</span></a>
+                        </li>
+                        <li> <a class="has-arrow waves-effect" href="summary_cluster.html"><i class="mdi mdi-chart-line"></i><span class="hide-menu">Summary By Cluster</span></a>
+                        </li>
+                        <li> <a class="has-arrow waves-effect" href="summary_cabang.html"><i class="mdi mdi-chart-line"></i><span class="hide-menu">Summary By Cabang</span></a>
+                        </li>
+                        <li> <a class="has-arrow waves-effect" href="summary_item.html"><i class="mdi mdi-chart-line"></i><span class="hide-menu">Summary By Item</span></a>
+                        </li>
+                        <li> <a class="has-arrow waves-effect" href="no_sales.html"><i class="mdi mdi-trending-down"></i><span class="hide-menu">No Sales</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="row page-titles">
+                <div class="col-md-3 align-self-center text-center">
+                    <h3 class="text-themecolor headline-yellow">Summary By Cabang</h3>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row page-titles space-title">
+                    <div class="space-title col-sm-10">
+                        <h3 class="text-themecolor">Indicator Project</h3>
+                    </div>
+                    <!-- Dropdown Filter -->
+                    <div class="float-right">
+                        <button type="button" class="btn btn-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-filter"></i> Filter By
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row -->
+
+                <!-- Table 1 -->
+                <table class="table color-table dark-table border table-responsive1 bg-white">
+                    <thead>
+                        <!-- tr 1 -->
+                        <tr>
+                            <th class="text-center">
+                                Code
+                            </th>
+                            <th class="text-center">
+                                Brand Name
+                            </th>
+                            <th class="text-center">
+                                #TOKO
+                            </th>
+                            <th class="text-center" colspan="2">
+                                Sales / Day (MIDR)
+                            </th>
+                            <th class="text-center" colspan="2">
+                                OOS (%)
+                            </th>
+                            <th class="text-center" colspan="2">
+                                DSI OH
+                            </th>
+                            <th class="text-center" colspan="2">
+                                Market Return (MIDR)
+                            </th>
+                            <th class="text-center" colspan="2">
+                                RETURN RATE (%)
+                            </th>
+                        </tr>
+                        <!-- tr 2 -->
+                        <tr>
+                            <th> 
+                            </th>
+                            <th> 
+                            </th>
+                            <th>
+                            </th>
+                            <th> 
+                                Value
+                            </th>
+                            <th>
+                                Growth
+                            </th>
+                            <th> 
+                                Value
+                            </th>
+                            <th>
+                                Gap
+                            </th>
+                            <th> 
+                                Value
+                            </th>
+                            <th>
+                                Growth
+                            </th>
+                            <th> 
+                                Value
+                            </th>
+                            <th>
+                                Growth
+                            </th>
+                            <th> 
+                                Value
+                            </th>
+                            <th>
+                                Gap
+                            </th>
+                      </tr>
+                      <!-- DATA 1 -->
+                      <tr class="td-even">
+                        <td>972</td>
+                        <td>PROMO MIDIMART</td>
+                        <td>187</td>
+                        <td>70,3</td>
+                        <td>13,9%</td>
+                        <td>1,8%</td>
+                        <td>-3,2%</td>
+                        <td>46</td>
+                        <td>84,5%</td>
+                        <td>524,9</td>
+                        <td>-58,0%</td>
+                        <td>1,7%</td>
+                        <td>-3,9%</td>
+                      </tr>
+                      <!-- DATA 2 -->
+                      <tr class="td-odd">
+                        <td>513</td>
+                        <td>DUTCH LADY</td>
+                        <td>187</td>
+                        <td>70,3</td>
+                        <td>13,9%</td>
+                        <td>1,8%</td>
+                        <td>-3,2%</td>
+                        <td>46</td>
+                        <td>84,5%</td>
+                        <td>524,9</td>
+                        <td>-58,0%</td>
+                        <td>1,7%</td>
+                        <td>-3,9%</td>
+                      </tr>
+                      <!-- DATA 3 -->
+                      <tr class="td-even">
+                        <td>254</td>
+                        <td>YES</td>
+                        <td>187</td>
+                        <td>70,3</td>
+                        <td>13,9%</td>
+                        <td>1,8%</td>
+                        <td>-3,2%</td>
+                        <td>46</td>
+                        <td>84,5%</td>
+                        <td>524,9</td>
+                        <td>-58,0%</td>
+                        <td>1,7%</td>
+                        <td>-3,9%</td>
+                      </tr> 
+                      <!-- DATA 4 -->
+                      <tr class="td-odd">
+                        <td>479</td>
+                        <td>SUSU BENDERA</td>
+                        <td>187</td>
+                        <td>70,3</td>
+                        <td>13,9%</td>
+                        <td>1,8%</td>
+                        <td>-3,2%</td>
+                        <td>46</td>
+                        <td>84,5%</td>
+                        <td>524,9</td>
+                        <td>-58,0%</td>
+                        <td>1,7%</td>
+                        <td>-3,9%</td>
+                      </tr>
+                      <!-- DATA 5 -->
+                      <tr class="td-even">
+                        <td>631</td>
+                        <td>FRISIAN FLAG</td>
+                        <td>187</td>
+                        <td>70,3</td>
+                        <td>13,9%</td>
+                        <td>1,8%</td>
+                        <td>-3,2%</td>
+                        <td>46</td>
+                        <td>84,5%</td>
+                        <td>524,9</td>
+                        <td>-58,0%</td>
+                        <td>1,7%</td>
+                        <td>-3,9%</td>
+                      </tr>
+                       <!-- DATA 6 -->
+                       <tr class="td-odd">
+                        <td>186</td>
+                        <td>PROMO MARKETING</td>
+                        <td>187</td>
+                        <td>70,3</td>
+                        <td>13,9%</td>
+                        <td>1,8%</td>
+                        <td>-3,2%</td>
+                        <td>46</td>
+                        <td>84,5%</td>
+                        <td>524,9</td>
+                        <td>-58,0%</td>
+                        <td>1,7%</td>
+                        <td>-3,9%</td>
+                      </tr>
+                       <!-- DATA 7 -->
+                       <tr class="td-even">
+                        <td>609</td>
+                        <td>CANISTER</td>
+                        <td>187</td>
+                        <td>70,3</td>
+                        <td>13,9%</td>
+                        <td>1,8%</td>
+                        <td>-3,2%</td>
+                        <td>46</td>
+                        <td>84,5%</td>
+                        <td>524,9</td>
+                        <td>-58,0%</td>
+                        <td>1,7%</td>
+                        <td>-3,9%</td>
+                      </tr>
+                       <!-- DATA 8 -->
+                       <tr class="td-odd">
+                        <td>535</td>
+                        <td>FRISTI</td>
+                        <td>187</td>
+                        <td>70,3</td>
+                        <td>13,9%</td>
+                        <td>1,8%</td>
+                        <td>-3,2%</td>
+                        <td>46</td>
+                        <td>84,5%</td>
+                        <td>524,9</td>
+                        <td>-58,0%</td>
+                        <td>1,7%</td>
+                        <td>-3,9%</td>
+                      </tr>
+                       <!-- DATA 9 -->
+                       <tr class="td-even">
+                        <td>518</td>
+                        <td>RTD</td>
+                        <td>187</td>
+                        <td>70,3</td>
+                        <td>13,9%</td>
+                        <td>1,8%</td>
+                        <td>-3,2%</td>
+                        <td>46</td>
+                        <td>84,5%</td>
+                        <td>524,9</td>
+                        <td>-58,0%</td>
+                        <td>1,7%</td>
+                        <td>-3,9%</td>
+                      </tr>
+                       <!-- DATA 10 -->
+                       <tr class="td-odd">
+                        <td>678</td>
+                        <td>CALCIMEX</td>
+                        <td>187</td>
+                        <td>70,3</td>
+                        <td>13,9%</td>
+                        <td>1,8%</td>
+                        <td>-3,2%</td>
+                        <td>46</td>
+                        <td>84,5%</td>
+                        <td>524,9</td>
+                        <td>-58,0%</td>
+                        <td>1,7%</td>
+                        <td>-3,9%</td>
+                      </tr>
+                      <!-- Total -->
+                      <tr class="td-yellow-even">
+                        <td colspan="2">Total</td>
+                        <td>410</td>
+                        <td>70,3</td>
+                        <td>13,9%</td>
+                        <td>1,8%</td>
+                        <td>-3,2%</td>
+                        <td>46</td>
+                        <td>84,5%</td>
+                        <td>524,9</td>
+                        <td>-58,0%</td>
+                        <td>1,7%</td>
+                        <td>-3,9%</td>
+                      </tr>
+                    </thead>
+                </table>
+
+                <!-- Table 2 -->
+                                <table class="table color-table dark-table border table-responsive1 bg-white mt-5">
+                                    <thead>
+                                        <!-- tr 1 -->
+                                        <tr>
+                                            <th class="text-center">
+                                                Code
+                                            </th>
+                                            <th class="text-center">
+                                                Branch Name
+                                            </th>
+                                            <th class="text-center">
+                                                #Toko
+                                            </th>
+                                            <th class="text-center" colspan="2">
+                                                Sales / Day (MIDR)
+                                            </th>
+                                            <th class="text-center" colspan="2">
+                                                OOS (%)
+                                            </th>
+                                            <th class="text-center" colspan="2">
+                                                DSI OH
+                                            </th>
+                                            <th class="text-center" colspan="2">
+                                                Market Return (MIDR)
+                                            </th>
+                                            <th class="text-center" colspan="2">
+                                                RETURN RATE (%)
+                                            </th>
+                                        </tr>
+                                        <!-- tr 2 -->
+                                        <tr>
+                                            <th> 
+                                            </th>
+                                            <th> 
+                                            </th>
+                                            <th>
+                                            </th>
+                                            <th> 
+                                                Value
+                                            </th>
+                                            <th>
+                                                Growth
+                                            </th>
+                                            <th> 
+                                                Value
+                                            </th>
+                                            <th>
+                                                Gap
+                                            </th>
+                                            <th> 
+                                                Value
+                                            </th>
+                                            <th>
+                                                Growth
+                                            </th>
+                                            <th> 
+                                                Value
+                                            </th>
+                                            <th>
+                                                Growth
+                                            </th>
+                                            <th> 
+                                                Value
+                                            </th>
+                                            <th>
+                                                Gap
+                                            </th>
+                                      </tr>
+                                      <!-- DATA 1 -->
+                                      <tr class="td-even">
+                                        <td>121035</td>
+                                        <td>BENDERA 123 VANILA 300G</td>
+                                        <td>187</td>
+                                        <td>70,3</td>
+                                        <td>13,9%</td>
+                                        <td>1,8%</td>
+                                        <td>-3,2%</td>
+                                        <td>46</td>
+                                        <td>84,5%</td>
+                                        <td>524,9</td>
+                                        <td>-58,0%</td>
+                                        <td>1,7%</td>
+                                        <td>-3,9%</td>
+                                      </tr>
+                                      <!-- DATA 2 -->
+                                      <tr class="td-odd">
+                                        <td>121034</td>
+                                        <td>BENDERA 123 MADU KTK 130GR</td>
+                                        <td>187</td>
+                                        <td>70,3</td>
+                                        <td>13,9%</td>
+                                        <td>1,8%</td>
+                                        <td>-3,2%</td>
+                                        <td>46</td>
+                                        <td>84,5%</td>
+                                        <td>524,9</td>
+                                        <td>-58,0%</td>
+                                        <td>1,7%</td>
+                                        <td>-3,9%</td>
+                                      </tr>
+                                      <!-- DATA 3 -->
+                                      <tr class="td-even">
+                                        <td>121035</td>
+                                        <td>BENDERA 123 KTK 130GR</td>
+                                        <td>187</td>
+                                        <td>70,3</td>
+                                        <td>13,9%</td>
+                                        <td>1,8%</td>
+                                        <td>-3,2%</td>
+                                        <td>46</td>
+                                        <td>84,5%</td>
+                                        <td>524,9</td>
+                                        <td>-58,0%</td>
+                                        <td>1,7%</td>
+                                        <td>-3,9%</td>
+                                      </tr> 
+                                      <!-- DATA 4 -->
+                                      <tr class="td-odd">
+                                        <td>121034</td>
+                                        <td>BENDERA 123 COKLAT 300G</td>
+                                        <td>187</td>
+                                        <td>70,3</td>
+                                        <td>13,9%</td>
+                                        <td>1,8%</td>
+                                        <td>-3,2%</td>
+                                        <td>46</td>
+                                        <td>84,5%</td>
+                                        <td>524,9</td>
+                                        <td>-58,0%</td>
+                                        <td>1,7%</td>
+                                        <td>-3,9%</td>
+                                      </tr>
+                                      <!-- DATA 5 -->
+                                      <tr class="td-even">
+                                        <td>121035</td>
+                                        <td>BENDERA 123 VANILA BOX 800G</td>
+                                        <td>187</td>
+                                        <td>70,3</td>
+                                        <td>13,9%</td>
+                                        <td>1,8%</td>
+                                        <td>-3,2%</td>
+                                        <td>46</td>
+                                        <td>84,5%</td>
+                                        <td>524,9</td>
+                                        <td>-58,0%</td>
+                                        <td>1,7%</td>
+                                        <td>-3,9%</td>
+                                      </tr>
+                                      <!-- DATA 6 -->
+                                      <tr class="td-odd">
+                                        <td>121035</td>
+                                        <td>BENDERA 123 COKLAT BOX 200G</td>
+                                        <td>187</td>
+                                        <td>70,3</td>
+                                        <td>13,9%</td>
+                                        <td>1,8%</td>
+                                        <td>-3,2%</td>
+                                        <td>46</td>
+                                        <td>84,5%</td>
+                                        <td>524,9</td>
+                                        <td>-58,0%</td>
+                                        <td>1,7%</td>
+                                        <td>-3,9%</td>
+                                      </tr>
+                                      <!-- DATA 7 -->
+                                      <tr class="td-even">
+                                        <td>121035</td>
+                                        <td>BENDERA 123 MADU BOX 400G</td>
+                                        <td>187</td>
+                                        <td>70,3</td>
+                                        <td>13,9%</td>
+                                        <td>1,8%</td>
+                                        <td>-3,2%</td>
+                                        <td>46</td>
+                                        <td>84,5%</td>
+                                        <td>524,9</td>
+                                        <td>-58,0%</td>
+                                        <td>1,7%</td>
+                                        <td>-3,9%</td>
+                                      </tr>
+                                      <!-- DATA 8 -->
+                                      <tr class="td-odd">
+                                        <td>121035</td>
+                                        <td>BENDERA 1 BOX 400G</td>
+                                        <td>187</td>
+                                        <td>70,3</td>
+                                        <td>13,9%</td>
+                                        <td>1,8%</td>
+                                        <td>-3,2%</td>
+                                        <td>46</td>
+                                        <td>84,5%</td>
+                                        <td>524,9</td>
+                                        <td>-58,0%</td>
+                                        <td>1,7%</td>
+                                        <td>-3,9%</td>
+                                      </tr>
+                                      <!-- DATA 9 -->
+                                      <tr class="td-even">
+                                        <td>121035</td>
+                                        <td>BENDERA 456 F.CREAM KTK 400G</td>
+                                        <td>187</td>
+                                        <td>70,3</td>
+                                        <td>13,9%</td>
+                                        <td>1,8%</td>
+                                        <td>-3,2%</td>
+                                        <td>46</td>
+                                        <td>84,5%</td>
+                                        <td>524,9</td>
+                                        <td>-58,0%</td>
+                                        <td>1,7%</td>
+                                        <td>-3,9%</td>
+                                      </tr>
+                                      <!-- DATA 10 -->
+                                      <tr class="td-odd">
+                                        <td>121035</td>
+                                        <td>BENDERA 456 COKLAT 120G</td>
+                                        <td>187</td>
+                                        <td>70,3</td>
+                                        <td>13,9%</td>
+                                        <td>1,8%</td>
+                                        <td>-3,2%</td>
+                                        <td>46</td>
+                                        <td>84,5%</td>
+                                        <td>524,9</td>
+                                        <td>-58,0%</td>
+                                        <td>1,7%</td>
+                                        <td>-3,9%</td>
+                                      </tr>
+                                      <!-- TOTAL -->
+                                      <tr class="td-yellow-even">
+                                        <td colspan="2">TOTAL</td>
+                                        <td>708</td>
+                                        <td>70,3</td>
+                                        <td>13,9%</td>
+                                        <td>1,8%</td>
+                                        <td>-3,2%</td>
+                                        <td>46</td>
+                                        <td>84,5%</td>
+                                        <td>524,9</td>
+                                        <td>-58,0%</td>
+                                        <td>1,7%</td>
+                                        <td>-3,9%</td>
+                                      </tr>
+                    </thead>
+                </table>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer">
+             IT Demand 
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="plugins/bootstrap/js/popper.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <!--morris JavaScript -->
+    <script src="plugins/raphael/raphael-min.js"></script>
+    <script src="plugins/morrisjs/morris.min.js"></script>
+    <!-- sparkline chart -->
+    <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script src="plugins/sparkline/jquery.charts-sparkline.js"></script>
+    <!-- ============================================================== -->
+    <!-- echart -->
+    <script src="plugins/echarts/echarts-all.js"></script>
+    <script src="plugins/echarts/echarts-init.js"></script>
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="plugins/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
+
+</html>

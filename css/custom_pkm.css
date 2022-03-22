@@ -22,6 +22,42 @@ td {
   border: 3px solid white !important;
 }
 
+.low-inv {
+  font-weight: 500;
+  background-color: #50b052;
+  color: white;
+}
+
+.proper-inv {
+  font-weight: 500;
+  background-color: #a8d08d;
+  color: white;
+}
+
+.mod-sales {
+  font-weight: 500;
+  background-color: #f8c045;
+  color: white;
+}
+
+.no-sales {
+  font-weight: 500;
+  background-color: #f4b083;
+  color: white;
+}
+
+.new-store {
+  font-weight: 500;
+  background-color: #adb9ca;
+  color: white;
+}
+
+.total {
+  font-weight: 500;
+  background-color: #bdd6ee;
+  color: white;
+}
+
 .text-green {
   font-weight: 500;
   color: var(--text-green-secondary) !important;
@@ -48,6 +84,10 @@ td {
   font-weight: 500;
   background-color: var(--background-odd);
   color: var(--text-primary);
+}
+
+table {
+  border-radius: 8px 8px 0px 0px !important;
 }
 
 .td-red {
@@ -90,4 +130,12 @@ td {
   margin-left: 95px;
   background-color: #9f8400;
   color: white;
+}
+
+@media (max-width: 1100px) {
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
 }
