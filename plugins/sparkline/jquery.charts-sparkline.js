@@ -130,16 +130,16 @@ $(document).ready(function() {
 
          $('#sparkline13').sparkline([5, 6, 2, 9, 4, 7, 10, 12,4,7,10], {
             type: 'bar',
-            height: '200',
-            barWidth: '10',
+            height: '300',
+            barWidth: '60',
             resize: true,
             barSpacing: '7',
             barColor: '#f96262'
         });
-         $('#sparkline13').sparkline([5, 6, 2, 9, 4, 7, 10, 12,4,7,10], {
+         $('#sparkline13').sparkline([6, 7, 3, 10, 5, 8, 10, 12,4,7,10], {
             type: 'line',
             height: '200',
-            lineColor: '#f96262',
+            lineColor: '#000000',
             fillColor: 'transparent',
             composite: true,
             highlightLineColor: 'rgba(0,0,0,.1)',

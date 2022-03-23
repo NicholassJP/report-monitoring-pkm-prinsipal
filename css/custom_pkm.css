@@ -151,8 +151,8 @@ table {
   text-align: center;
 }
 
-.right {
-  float: right !important;
+.right-position {
+  margin-left: 420px;
 }
 
 .btn-filter {
@@ -175,6 +175,9 @@ table {
   }
   .btn-filter {
     margin-left: -0px;
+  }
+  .right-position {
+    margin-left: 9px;
   }
 }
 
