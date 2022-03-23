@@ -195,8 +195,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body analytics-info">
-                            <h4 class="card-title ml-3">Data Stock dan Toko Tidak Ada Sales 4 Bulan Berturut-turut</h4>
-                            <h5 class="card-title">Terdapat 6.152 toko (district) yang tidak ada sales selama may - aug 202. dengan ini nilai inventory ditoko sebesar 3.209 MIDR (31-Aug-2021)</h6>
+                            <h4 class="card-title ml-3">Toko No Sales 6 Bulan by SKU</h4>
                             <div id="chart-1" class="text-center"></div>
                         </div>
                     </div>
@@ -206,7 +205,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body analytics-info">
-                            <h4 class="card-title">Composite Bar Chart</h4>
+                            <h4 class="card-title">Toko No Sales 6 Bulan by Branch</h4>
                             <div id="chart-2" class="text-center"></div>
                         </div>
                     </div>
@@ -268,7 +267,6 @@
       },
           dataLabels: {
             enabled: true,
-            enabledOnSeries: [1],
           },
           labels: [
             "Bebelac Gold",
@@ -296,12 +294,12 @@
         colors : ['#9D8834', '#FF0000'],
       series: [
         {
-          name: "JUMLAH TOKO",
+          name: "DATA TOKO",
           type: "column",
           data: [500, 600, 700, 500, 300, 700, 600,500, 600, 700, 500, 300, 700, 600,500, 600, 700, 500, 300, 700, 600,500, 600, 700, 500, 300, 700, 600],
         },
         {
-          name: "ACT OH VALUE",
+          name: "JUMLAH TOKO",
           type: "line",
           data: [600, 700, 800, 600, 500, 800, 700, 600, 700, 800, 600, 500, 800, 700, 600, 700, 800, 600, 500, 800, 700, 600, 700, 800, 600, 500, 800, 700],
         },
@@ -321,8 +319,16 @@
       },
       dataLabels: {
         enabled: true,
-        enabledOnSeries: [1],
+        position: 'top',
+        formatter: function (val) {
+        return val ;
       },
+        horizontal: true,
+        offsetX: 0,
+        style: {
+            fontSize: '12px',
+        }
+    },
       labels: [
         "Pontianak",
         "Bandung",
