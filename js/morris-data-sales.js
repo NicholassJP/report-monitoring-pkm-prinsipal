@@ -180,7 +180,6 @@ Morris.Area({
     lineWidth: 4,
     hideHover: 'auto',
     lineColors: ['#55ce63', '#009efb', '#2f3d4a', '#2f3d4a'],
-    resize: true
     
 });
 

@@ -51,8 +51,7 @@ $( document ).ready(function () {
         labels: ['A', 'B', 'C', 'D', 'E', 'F'],
         barColors:['#50B052', '#A8D08D', '#F8C045', '#F4B083', '#ADB9CA', '#BDD6EE'],
         hideHover: 'auto',
-        gridLineColor: '#eef0f2',
-        resize: true
+        gridLineColor: '#eef0f2'
     });
 
  });    
