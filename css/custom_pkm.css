@@ -161,6 +161,12 @@ table {
   color: white;
 }
 
+.col-lg-12 {
+  padding-left: -0px !important;
+  padding-right: -0px !important;
+  margin-bottom: -0px;
+}
+
 @media (max-width: 1100px) {
   .table-responsive1 {
     display: block;
