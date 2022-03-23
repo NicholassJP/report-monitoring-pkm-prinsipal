@@ -6,7 +6,7 @@
   --text-red: #ec0f1a;
   --text-red-secondary: #d61721;
   --background-yellow-th: #ffd304;
-  --background-yellow-even: #ffec94;
+  --background-yellow-even: #ffd304;
   --background-yellow-odd: #fff7ce;
   --background-even: #eeeeee;
   --background-odd: #f8f8f8;
@@ -14,9 +14,24 @@
   --text-yellow: rgb(100, 100, 100);
 }
 
+.sticky-table {
+  position: sticky;
+  left: 0;
+}
+
 .table td,
 .table th {
-  padding: 0.5rem;
+  padding: 0.75rem;
+  vertical-align: middle;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 500px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
 }
 
 .chart-1 {
@@ -48,7 +63,8 @@ th {
 }
 
 td {
-  border: 3px solid white !important;
+  border-top: 3px solid white !important;
+  border-right: 3px solid white !important;
 }
 
 .low-inv {
@@ -161,10 +177,28 @@ table {
   color: white;
 }
 
+.fa-minus {
+  font-size: 14px;
+}
+
+.fa-plus {
+  font-size: 14px;
+}
+
+.right {
+  float: right;
+}
+
 .col-lg-12 {
   padding-left: -0px !important;
   padding-right: -0px !important;
   margin-bottom: -0px;
+}
+
+.table-responsive2 {
+  display: relative;
+  width: 100%;
+  overflow-x: auto;
 }
 
 @media (max-width: 1100px) {
