@@ -24,10 +24,11 @@ $( document ).ready(function () {
             y: 'Jun',
             a: 8,
         }],
+        grid: false,
         xkey: 'y',
         ykeys: ['a'],
-        labels: ['A'],
-        barColors:['#6E5FC4'],
+        labels: ['B'],
+        barColors:['#ED7D39'],
         hideHover: 'auto',
         gridLineColor: '#eef0f2',
     });
