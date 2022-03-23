@@ -169,6 +169,7 @@ Morris.Area({
         sales: 20000,
         nosales: 25000
     }],
+    grid: false,
     xkey: 'y',
     ykeys: ['lowinven', 'properinven', 'sales', 'nosales'],
     labels: ['High Sales Low Inventory', 'High Sales Proper Inventory', 'Moderate Sales', 'No Sales'],

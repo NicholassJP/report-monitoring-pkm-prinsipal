@@ -46,6 +46,7 @@ $( document ).ready(function () {
             e: 2,
             f: 5,
         }],
+        grid: false,
         xkey: 'y',
         ykeys: ['a', 'b', 'c', 'd', 'e', 'f'],
         labels: ['A', 'B', 'C', 'D', 'E', 'F'],

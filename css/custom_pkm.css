@@ -14,9 +14,19 @@
   --text-yellow: rgb(100, 100, 100);
 }
 
+.color-table.dark-table thead th {
+  background-color: #234a5c !important;
+}
+
 .sticky-table {
   position: sticky;
   left: 0;
+}
+
+.sticky-table-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .table td,
@@ -177,6 +187,12 @@ table {
   color: white;
 }
 
+.btn-filter-1 {
+  margin-left: 80px;
+  background-color: #9f8400;
+  color: white;
+}
+
 .fa-minus {
   font-size: 14px;
 }
@@ -187,12 +203,6 @@ table {
 
 .right {
   float: right;
-}
-
-.col-lg-12 {
-  padding-left: -0px !important;
-  padding-right: -0px !important;
-  margin-bottom: -0px;
 }
 
 .table-responsive2 {
@@ -209,6 +219,9 @@ table {
   }
   .btn-filter {
     margin-left: -0px;
+  }
+  .btn-filter-1 {
+    margin-left: 15px;
   }
   .right-position {
     margin-left: 9px;
