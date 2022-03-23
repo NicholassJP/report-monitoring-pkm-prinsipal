@@ -30,7 +30,6 @@ $( document ).ready(function () {
         barColors:['#6E5FC4'],
         hideHover: 'auto',
         gridLineColor: '#eef0f2',
-        resize: true
     });
 
  });    
