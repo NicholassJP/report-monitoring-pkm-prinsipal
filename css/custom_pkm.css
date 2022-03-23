@@ -14,28 +14,33 @@
   --text-yellow: rgb(100, 100, 100);
 }
 
-.chart-1{
-  color: #50B052;
+.table td,
+.table th {
+  padding: 0.5rem;
 }
 
-.chart-2{
-  color: #A8D08D;
+.chart-1 {
+  color: #50b052;
 }
 
-.chart-3{
-  color: #F8C045;
+.chart-2 {
+  color: #a8d08d;
 }
 
-.chart-4{
-  color: #F4B083;
+.chart-3 {
+  color: #f8c045;
 }
 
-.chart-5{
-  color: #ADB9CA;
+.chart-4 {
+  color: #f4b083;
 }
 
-.chart-6{
-  color: #BDD6EE;
+.chart-5 {
+  color: #adb9ca;
+}
+
+.chart-6 {
+  color: #bdd6ee;
 }
 
 th {
