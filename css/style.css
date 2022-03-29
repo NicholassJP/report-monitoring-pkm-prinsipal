@@ -7291,7 +7291,6 @@ a.mytooltip {
 
 .stats-row .stat-item {
   display: inline-block;
-  padding-right: 15px;
 }
 
 .stats-row .stat-item + .stat-item {

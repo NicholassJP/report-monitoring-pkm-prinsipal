@@ -23,12 +23,9 @@
     <link href="css/custom.css" rel="stylesheet" type="text/css">
     <link href="css/custom_pkm.css" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <!-- Script Apex -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
 </head>
 
 <body class="fix-header card-no-border logo-center">
@@ -195,7 +192,7 @@
                             <div class="card-body analytics-info">
                                 <h3 class="card-title">SALES/DAY</h3>
                                 <div class="stats-row">
-                                    <img src="images/icon_card.png" class="float-left" alt="">
+                                    <img src="images/icon_card_1.png" class="img-card" alt="">
                                     <div class="right stat-item">
                                         <h1 class="text-success text-right">472 M</h1>
                                         <h4 class="text-right">vs LY<i class="fa fa-plus text-success ml-1"></i><small class="text-success ml-1">14% (61 JT)</small></h4> 
@@ -210,7 +207,7 @@
                             <div class="card-body analytics-info">
                                 <h3 class="card-title">OOS</h3>
                                 <div class="stats-row">
-                                    <img src="images/icon_card.png" alt="">
+                                    <img src="images/icon_card_2.png" class="img-card" alt="">
                                     <div class="right stat-item">
                                         <h1 class="text-success text-right">0,9%</h1>
                                         <h4 class="text-right">vs LY<i class="fa fa-minus text-success ml-1"></i><small class="text-success ml-1">1,6%</small></h4> 
@@ -225,7 +222,7 @@
                             <div class="card-body analytics-info">
                                 <h3 class="card-title">DSI</h3>
                                 <div class="stats-row">
-                                    <img src="images/icon_card.png" alt="">
+                                    <img src="images/icon_card_3.png" class="img-card" alt="">
                                     <div class="right stat-item">
                                         <h1 class="text-danger text-right">73 Day</h1>
                                         <h4 class="text-right">vs LY<i class="fa fa-plus text-danger ml-1"></i><small class="text-danger ml-1">7 Hari</small></h4> 
@@ -240,10 +237,10 @@
                             <div class="card-body analytics-info">
                                 <h3 class="card-title">RETURN</h3>
                                 <div class="stats-row">
-                                    <img src="images/icon_card.png" alt="">
+                                    <img src="images/icon_card_4.png" class="img-card" alt="">
                                     <div class="right stat-item">
                                         <h1 class="text-success text-right">2,777 B</h1>
-                                        <h4 class="text-right">vs LY<i class="fa fa-minus text-success ml-1"></i><small class="text-success ml-1">36,4% (1,284 B)</small></h4> 
+                                        <h4 class="text-right">vs LY<i class="fa fa-minus text-success"></i><small class="text-success ml-1">36,4% (1,284 B)</small></h4> 
                                     </div>
                                 </div>
                             </div>
@@ -260,42 +257,42 @@
                 <table class="table color-table dark-table border table-responsive2 table-wrapper-scroll-y bg-white">
                     <thead>
                         <tr>
-                            <th class="text-center" colspan="26">
+                            <th class="text-center sticky-col first-col" colspan="26">
                                 PERIODE 2021
                             </th>
                         </tr>
                         <tr>
-                        <th class="sticky-table">INDIKATOR</th>
-                        <th class="th-yellow">YTD NOV 2020</th>
+                            <th class="sticky-col first-col">INDIKATOR</th>
+                            <th class="sticky-col second-col">YTD NOV 2020</th>
                         <th>15 JAN</th>
-                        <th>30 JAN</th>
+                        <th>31 JAN</th>
                         <th>15 FEB</th>
                         <th>28 FEB</th>
                         <th>15 MAR</th>
-                        <th>30 MAR</th>
+                        <th>31 MAR</th>
                         <th>15 APR</th>
                         <th>30 APR</th>
                         <th>15 MAY</th>
-                        <th>30 MAY</th>
+                        <th>31 MAY</th>
                         <th>15 JUN</th>
                         <th>30 JUN</th>
                         <th>15 JUL</th>
-                        <th>30 JUL</th>
+                        <th>31 JUL</th>
                         <th>15 AUG</th>
-                        <th>30 AUG</th>
+                        <th>31 AUG</th>
                         <th>15 SEP</th>
                         <th>30 SEP</th>
                         <th>15 OKT</th>
-                        <th>30 OKT</th>
+                        <th>31 OKT</th>
                         <th>15 NOV</th>
                         <th>30 NOV</th>
                         <th>15 DES</th>
-                        <th>30 DES</th>
+                        <th>31 DES</th>
                       </tr>
                       <!-- SALES/ DAY (MIDR) -->
                       <tr>
-                        <td class="td-even sticky-table d">SALES/ DAY (MIDR)</td>
-                        <td class="td-yellow-even">411</td>
+                        <td class="td-even sticky-col first-col no-border-right">SALES/ DAY (MIDR)</td>
+                        <td class="td-yellow-even sticky-col second-col">411</td>
                         <td class="td-green">430</td>
                         <td class="td-green">414</td>
                         <td class="td-green">478</td>
@@ -323,8 +320,8 @@
                       </tr>
                       <!-- OOS (%) -->
                       <tr>
-                        <td class="td-odd sticky-table">OOS (%)</td>
-                        <td class="td-yellow-odd">2,5%</td>
+                        <td class="td-odd sticky-col first-col no-border-right">OOS (%)</td>
+                        <td class="td-yellow-odd sticky-col second-col">2,5%</td>
                         <td class="td-green">1,1%</td>
                         <td class="td-green">0,7%</td>
                         <td class="td-green">1,1%</td>
@@ -352,8 +349,8 @@
                       </tr>
                       <!-- DSI (HARI) -->
                       <tr>
-                        <td class="td-even sticky-table">DSI (HARI)</td>
-                        <td class="td-yellow-even">66</td>
+                        <td class="td-even sticky-col first-col no-border-right">DSI (HARI)</td>
+                        <td class="td-yellow-even sticky-col second-col">66</td>
                         <td class="td-green">63</td>
                         <td class="td-red">76</td>
                         <td class="td-red">75</td>
@@ -381,8 +378,8 @@
                       </tr> 
                       <!-- MARKET RETURN (MIDR) -->
                       <tr>
-                        <td class="td-odd sticky-table">MARKET RETURN (MIDR)</td>
-                        <td class="td-yellow-odd">3,4561</td>
+                        <td class="td-odd sticky-col first-col no-border-right">MARKET RETURN (MIDR)</td>
+                        <td class="td-yellow-odd sticky-col second-col">3,4561</td>
                         <td class="td-green">102</td>
                         <td class="td-green">123</td>
                         <td class="td-green">234</td>
@@ -405,13 +402,13 @@
                         <td class="td-green">221</td>
                         <td class="td-green">212</td>
                         <td class="td-odd">2,277</td>
-                        <td class="td-odd text-green">-1,284</td>
-                        <td class="td-odd text-green">-36,4%</td>
+                        <td class="td-odd text-green">-1,84</td>
+                        <td class="td-odd text-green">-3,4%</td>
                       </tr>
                       <!-- RETURN RATE (%) -->
                       <tr>
-                        <td class="td-even sticky-table">RETURN RATE (%)</td>
-                        <td class="td-yellow-even">411</td>
+                        <td class="td-even sticky-col first-col no-border-right">RETURN RATE (%)</td>
+                        <td class="td-yellow-even sticky-col second-col">411</td>
                         <td class="td-green">2.6%</td>
                         <td class="td-green">2.6%</td>
                         <td class="td-green">2.6%</td>
@@ -463,7 +460,7 @@
                         <div class="card responsive-over">
                           <div class="card-body">
                             <h4 class="card-title">TREND INDICATOR - PERIODE 2021</h4>
-                            <div id="morris-bar-chart-1"></div>
+                            <div id="trend-bar-perfomance"></div>
                           </div>
                         </div>
                       </div>
@@ -518,7 +515,7 @@
     <!--morris JavaScript -->
     <script src="plugins/raphael/raphael-min.js"></script>
     <script src="plugins/morrisjs/morris.min.js"></script>
-    <script src="js/morris-data.js"></script>
+    <script src="js/trend-bar-perfomance.js"></script>
     <!-- sparkline chart -->
     <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
     <script src="plugins/sparkline/jquery.charts-sparkline.js"></script>
