@@ -16,7 +16,8 @@
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- MorriesCSS -->
     <link href="plugins/morrisjs/morris.css" rel="stylesheet">
-    
+    <!-- Apex Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -419,27 +420,7 @@
                                     <div class="col-lg-12">
                                         <div class="card responsive-over">
                                           <div class="card-body">
-                                            <ul class="list-inline text-right">
-                                              <li>
-                                                <h5>
-                                                  <i class="fa fa-circle m-r-5 text-inverse"></i>High Sales Low Inventory
-                                                </h5>
-                                              </li>
-                                              <li>
-                                                <h5><i class="fa fa-circle m-r-5 text-info"></i>High Sales Proper Inventory</h5>
-                                              </li>
-                                              <li>
-                                                <h5>
-                                                  <i class="fa fa-circle m-r-5 text-success"></i>Moderate Sales
-                                                </h5>
-                                              </li>
-                                              <li>
-                                                <h5>
-                                                  <i class="fa fa-circle m-r-5 text-success"></i>No Sales
-                                                </h5>
-                                              </li>
-                                            </ul>
-                                            <div id="morris-area-chart"></div>
+                                            <div id="chartline"></div>
                                           </div>
                                         </div>
                                       </div>
@@ -492,8 +473,9 @@
     <!--morris JavaScript -->
     <script src="plugins/raphael/raphael-min.js"></script>
     <script src="plugins/morrisjs/morris.min.js"></script>
+    <!-- Chart JS yang dipakai -->
     <script src="js/morris-data-trend.js"></script>
-    <script src="js/morris-data-sales.js"></script>
+    <script src="js/trend-line-chart.js"></script>
     <!-- sparkline chart -->
     <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
     <script src="plugins/sparkline/jquery.charts-sparkline.js"></script>
