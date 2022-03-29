@@ -49,6 +49,9 @@ $( document ).ready(function () {
             "15 DEC",
             "31 DEC",
           ],
+          yaxis:{
+            show : false,
+          },
           xaxis: {
             type: "String",
             tickAmount: 24,
