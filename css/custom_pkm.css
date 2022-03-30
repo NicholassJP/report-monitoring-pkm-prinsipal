@@ -3,7 +3,7 @@
   --text-green: #2cc229;
   --text-green-secondary: #32c53a;
   --background-red: #ffc7ce;
-  --text-red: #ec0f1a;
+  --text-red: #ff0000;
   --text-red-secondary: #d61721;
   --background-yellow-th: #ffd304;
   --background-yellow-even: #ffd304;
@@ -12,6 +12,53 @@
   --background-odd: #f8f8f8;
   --text-primary: #5a7d8d;
   --text-yellow: rgb(100, 100, 100);
+}
+
+#pagin nav {
+  width: 60%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#pagin a {
+  color: #fff;
+  padding: 0px 8px;
+  text-decoration: none;
+}
+
+.active a,
+#pagin a:hover {
+  color: #ffcc5c !important;
+  border-bottom: 3px solid #ffcc5c;
+}
+
+span {
+  border-bottom: 3px solid transparent;
+}
+
+.prev,
+.next {
+  transition: all 600ms ease;
+}
+
+.prev:hover {
+  transition: all 600ms ease;
+  transform: translateX(-10px);
+  border-bottom: none !important;
+}
+
+.next:hover {
+  transition: all 600ms ease;
+  transform: translateX(10px);
+  border-bottom: none !important;
 }
 
 .no-border-right {
@@ -187,6 +234,12 @@ table {
 .td-yellow-even {
   font-weight: 500;
   background-color: var(--background-yellow-even);
+  color: var(--text-primary);
+}
+
+.td-yellow-odd-2 {
+  font-weight: 500;
+  background-color: #f4eed0;
   color: var(--text-primary);
 }
 

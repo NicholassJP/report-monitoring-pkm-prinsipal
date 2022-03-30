@@ -28,38 +28,6 @@ var options = {
   {
     name: '16-30 APR',
     data: [42, 11, 15, 18, 29]
-  },
-  {
-    name: '1-15 MAY',
-    data: [21, 11, 6, 21, 12]
-  },
-  {
-    name: '16-31 MAY',
-    data: [22, 12, 31, 25, 11]
-  },
-  {
-    name: '1-15 JUN',
-    data: [5, 8, 12, 42, 11]
-  },
-  {
-    name: '16-30 JUN',
-    data: [21, 33, 11, 25, 12]
-  },
-  {
-    name: '1-15 JUL',
-    data: [14, 21, 27, 30, 35]
-  },
-  {
-    name: '16-31 JUL',
-    data: [12, 21, 24, 22, 15]
-  },
-  {
-    name: '1-15 AUG',
-    data: [11, 15, 21, 28, 32]
-  },
-  {
-    name: '16-31 AUG',
-    data: [3, 1, 6, 6, 5]
   }],
     chart: {
     type: 'bar',
@@ -84,7 +52,7 @@ var options = {
     categories: ['High Sales Low Inventory', 'High Sales Proper Inventory', 'Moderate Sales', 'No Sales', 'Total'],
   },
   yaxis: {
-      show: true,
+      show: false,
   },
   grid:{
       show: false,
@@ -94,5 +62,5 @@ var options = {
   },
   };
 
-  var chart = new ApexCharts(document.querySelector("#chart"), options);
+  var chart = new ApexCharts(document.querySelector("#Jan-Apr-20"), options);
   chart.render();
