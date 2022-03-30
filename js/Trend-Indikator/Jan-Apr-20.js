@@ -1,4 +1,5 @@
 var options = {
+  colors : ['#50B052', '#A8D08D', '#F8C045', '#F4B083', '#ADB9CA', '#BDD6EE'],
     series: [{
     name: '1 - 15 JAN',
     data: [44, 55, 57, 56, 61]
