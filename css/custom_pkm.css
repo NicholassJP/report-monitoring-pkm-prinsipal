@@ -18,6 +18,37 @@
   border-right: 0px !important;
 }
 
+.card-ukuran {
+  width: 280px;
+  height: 162px;
+}
+
+.card-background-1 {
+  width: auto;
+  background: url("/images/icon_card_1.png") 0 0 no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-color: white;
+}
+.card-background-2 {
+  width: auto;
+  background: url("/images/icon_card_2.png") 0 0 no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.card-background-3 {
+  width: auto;
+  background: url("/images/icon_card_3.png") 0 0 no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.card-background-4 {
+  width: auto;
+  background: url("/images/icon_card_4.png") 0 0 no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
 .img-card {
   width: 80px;
 }
