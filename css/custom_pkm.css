@@ -34,7 +34,8 @@
 }
 .card-background-2 {
   width: auto;
-  background: url("/images/icon_card_2.png") 0 0 no-repeat;
+  background: url("https://raw.githubusercontent.com/NicholassJP/report-monitoring-pkm-prinsipal/main/images/icon_card_2.png")
+    0 0 no-repeat;
   background-size: cover;
   overflow: hidden;
   background-position-x: -50px;
@@ -42,7 +43,8 @@
 }
 .card-background-3 {
   width: auto;
-  background: url("/images/icon_card_3.png") 0 0 no-repeat;
+  background: url("https://raw.githubusercontent.com/NicholassJP/report-monitoring-pkm-prinsipal/main/images/icon_card_3.png")
+    0 0 no-repeat;
   background-size: cover;
   overflow: hidden;
   background-position-x: -70px;
@@ -50,7 +52,8 @@
 }
 .card-background-4 {
   width: auto;
-  background: url("/images/icon_card_4.png") 0 0 no-repeat;
+  background: url("https://raw.githubusercontent.com/NicholassJP/report-monitoring-pkm-prinsipal/main/images/icon_card_4.png")
+    0 0 no-repeat;
   background-size: cover;
   overflow: hidden;
   background-position-x: -100px;
