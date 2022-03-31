@@ -1,17 +1,18 @@
 var options = {
+  colors : ['#50B052', '#A8D08D', '#F8C045', '#F4B083', '#ADB9CA', '#BDD6EE'],
     series: [{
     name: '1 - 15 MAY',
-    data: [44, 55, 57, 56, 61]
+    data: [16, 21, 24, 41, 21]
   }, {
     name: '16-31 MAY',
     data: [76, 85, 101, 98, 87]
   }, {
     name: '1 - 15 JUN',
-    data: [5, 12, 43, 21, 27]
+    data: [44, 55, 57, 56, 61]
   },
   {
     name: '16-28 JUN',
-    data: [16, 21, 24, 41, 21]
+    data: [5, 12, 43, 21, 27]
   },
   {
     name: '1 - 15 JUL',
@@ -19,19 +20,29 @@ var options = {
   },
   {
     name: '16-31 JUL',
-    data: [21, 23, 4, 5, 21]
+    data: [41, 14, 14, 25, 41]
   },
   {
     name: '1-15 AUG',
-    data: [12, 24, 31, 25, 28]
+    data: [3, 4, 21, 15, 21]
   },
   {
     name: '16-30 AUG',
-    data: [42, 11, 15, 18, 29]
+    data: [22, 15, 14, 11, 33]
   }],
     chart: {
     type: 'bar',
     height: 350
+  },
+  title:{
+    text: 'Periode May-August 2020',
+    align: 'left',
+    style: {
+      fontSize:  '20px',
+      fontWeight:  '',
+      fontFamily:  'Roboto',
+      color:  '#263238'
+    },
   },
   plotOptions: {
     bar: {

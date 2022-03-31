@@ -34,6 +34,16 @@ var options = {
     type: 'bar',
     height: 350
   },
+  title:{
+    text: 'Periode January-April 2020',
+    align: 'left',
+    style: {
+      fontSize:  '20px',
+      fontWeight:  '',
+      fontFamily:  'Roboto',
+      color:  '#263238'
+    },
+  },
   plotOptions: {
     bar: {
       horizontal: false,

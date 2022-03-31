@@ -1,37 +1,48 @@
 var options = {
+  colors : ['#50B052', '#A8D08D', '#F8C045', '#F4B083', '#ADB9CA', '#BDD6EE'],
     series: [{
-    name: '1 - 15 JAN',
-    data: [44, 55, 57, 56, 61]
+    name: '1 - 15 SEP',
+    data: [22, 33, 44, 55, 66]
   }, {
-    name: '16-31 JAN',
-    data: [76, 85, 101, 98, 87]
-  }, {
-    name: '1 - 15 FEB',
+    name: '16-30 SEP',
     data: [5, 12, 43, 21, 27]
-  },
-  {
-    name: '16-28 FEB',
+  }, {
+    name: '1 - 15 OKT',
     data: [16, 21, 24, 41, 21]
   },
   {
-    name: '1 - 15 MAR',
+    name: '16-31 OKT',
     data: [11, 14, 21, 11, 15]
   },
   {
-    name: '16-31 MAR',
+    name: '1 - 15 NOV',
+    data: [76, 85, 101, 98, 87]
+  },
+  {
+    name: '16-30 NOV',
+    data: [42, 11, 15, 18, 29]
+  },
+  {
+    name: '1-15 DEC',
     data: [21, 23, 4, 5, 21]
   },
   {
-    name: '1-15 APR',
+    name: '16-31 DEC',
     data: [12, 24, 31, 25, 28]
-  },
-  {
-    name: '16-30 APR',
-    data: [42, 11, 15, 18, 29]
   }],
     chart: {
     type: 'bar',
     height: 350
+  },
+  title:{
+    text: 'Periode September-December 2020',
+    align: 'left',
+    style: {
+      fontSize:  '20px',
+      fontWeight:  '',
+      fontFamily:  'Roboto',
+      color:  '#263238'
+    },
   },
   plotOptions: {
     bar: {
