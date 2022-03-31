@@ -25,7 +25,8 @@
 
 .card-background-1 {
   width: auto;
-  background: url("/images/icon_card_1.png") 0 0 no-repeat;
+  background: url("https://raw.githubusercontent.com/NicholassJP/report-monitoring-pkm-prinsipal/main/images/icon_card_1.png")
+    0 0 no-repeat;
   background-color: white;
   background-size: cover;
   background-position-x: -70px;
