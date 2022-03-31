@@ -315,4 +315,21 @@ table {
     width: 100%;
     overflow-x: auto;
   }
+  .card {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .sticky-table {
+    position: relative;
+  }
+
+  .sticky-col {
+    position: relative;
+  }
+
+  .second-col {
+    left: 0px;
+  }
 }
