@@ -23,35 +23,16 @@
 
     <!-- Script Apex -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
 </head>
 
 <body class="fix-header card-no-border logo-center">
-    <!-- ============================================================== -->
-    <!-- Preloader - style you can find in spinners.css -->
-    <!-- ============================================================== -->
     <div class="preloader">
         <svg class="circular" viewBox="25 25 50 50">
             <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
     </div>
-    <!-- ============================================================== -->
-    <!-- Main wrapper - style you can find in pages.scss -->
-    <!-- ============================================================== -->
     <div id="main-wrapper">
-        <!-- ============================================================== -->
-        <!-- Topbar header - style you can find in pages.scss -->
-        <!-- ============================================================== -->
         <header class="topbar" style="background-image: url(images/bg_header.png);">
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
-                <!-- ============================================================== -->
-                <!-- Logo -->
-                <!-- ============================================================== -->
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html">
                         <!-- Logo icon --><b>
@@ -61,12 +42,7 @@
                         <!--End Logo icon --> 
                      </a>
                 </div>
-                <!-- ============================================================== -->
-                <!-- End Logo -->
-                <!-- ============================================================== -->
                 <div class="navbar-collapse">
-                    <!-- ============================================================== -->
-                    <!-- ============================================================== -->
                     <ul class="navbar-nav mr-auto mt-md-0">
                          <!-- This is  -->
                         <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
@@ -74,27 +50,8 @@
                         <div class="title-b2b">
                             <h3 class="line-height-b2b margin-monitoring">Monitoring PKM Prinsipal</h3>
                         </div>
-                        
-                        <!-- ============================================================== -->
-                        <!-- End Messages -->
-                        <!-- ============================================================== -->
-                        <!-- ============================================================== -->
-                        <!-- Messages -->
-                        <!-- ============================================================== -->
-                        <!-- ============================================================== -->
-                        <!-- End Messages -->
-                        <!-- ============================================================== -->
                     </ul>
-                    <!-- ============================================================== -->
-                    <!-- User profile and search -->
-                    <!-- ============================================================== -->
                     <ul class="navbar-nav my-lg-0">
-                        <!-- ============================================================== -->
-                        <!-- Search -->
-                        <!-- ============================================================== -->
-                        <!-- ============================================================== -->
-                        <!-- Profile -->
-                        <!-- ============================================================== -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/1.jpg" alt="user" class="profile-pic" /><i class="ti-angle-down icons-cs" ></i></a>
                             <div class="dropdown-menu dropdown-menu-right scale-up">
@@ -117,12 +74,6 @@
                 </div>
             </nav>
         </header>
-        <!-- ============================================================== -->
-        <!-- End Topbar header -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
         <aside class="left-sidebar">
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar">
@@ -145,32 +96,13 @@
             </div>
             <!-- End Sidebar scroll-->
         </aside>
-        <!-- ============================================================== -->
-        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Page wrapper  -->
-        <!-- ============================================================== -->
         <div class="page-wrapper">
-            <!-- ============================================================== -->
-            <!-- Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-2 align-self-center text-center">
                     <h3 class="text-themecolor headline-yellow">No Sales</h3>
                 </div>
             </div>
-            <!-- ============================================================== -->
-            <!-- End Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Container fluid  -->
-            <!-- ============================================================== -->
             <div class="container-fluid">
-                
-                <!-- ============================================================== -->
-                <!-- Start Page Content -->
-                <!-- ============================================================== -->
                 <div class="row page-titles space-title">
                     <div class="space-title col-sm-10">
                     </div>
@@ -195,7 +127,7 @@
                     <div class="card">
                         <div class="card-body analytics-info">
                             <h4 class="card-title ml-3">Toko No Sales 6 Bulan by SKU</h4>
-                            <div id="chart-1" class="text-center"></div>
+                            <div id="SKU" class="text-center"></div>
                         </div>
                     </div>
                 </div>
@@ -205,176 +137,16 @@
                     <div class="card">
                         <div class="card-body analytics-info">
                             <h4 class="card-title">Toko No Sales 6 Bulan by Branch</h4>
-                            <div id="chart-2" class="text-center"></div>
+                            <div id="Branch" class="text-center"></div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
             </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
             <footer class="footer">
              IT Demand 
             </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
         </div>
-        <!-- ============================================================== -->
-        <!-- End Page wrapper  -->
-        <!-- ============================================================== -->
     </div>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
-    <script>
-        var options = {
-            colors : ['#395FED', '#FF0000'],
-          series: [
-            {
-              name: "DATA STOCK",
-              type: "column",
-              data: [500, 600, 700, 500, 300, 700, 600],
-            },
-            {
-              name: "JUMLAH TOKO",
-              type: "line",
-              data: [600, 700, 800, 600, 500, 800, 700],
-            },
-          ],
-          chart: {
-            height: 350,
-            type: "line",
-            toolbar:{
-              show : false
-          }
-          },
-            stroke: {
-            width: [0, 2],
-          },
-          yaxis: {
-            show: false,
-          },
-          grid: {
-    show: false,
-      },
-          dataLabels: {
-            enabled: true,
-          },
-          labels: [
-            "Bebelac Gold",
-            "Bebelac",
-            "Bebelac 3 Vanilla",
-            "Bebelac 3 Vanilla",
-            "Bebelac 3 Madu",
-            "Bebelac 4 Madu",
-            "Bebelac 4 Madu",
-          ],
-          xaxis: {
-            type: "String",
-            tickAmount: 7,
-            
-          },
-        };
-  
-        var chart = new ApexCharts(document.querySelector("#chart-1"), options);
-        chart.render();
-      </script>
-
-<!-- Chart 2 -->
-<script>
-    var options = {
-        colors : ['#9D8834', '#FF0000'],
-      series: [
-        {
-          name: "DATA STOCK",
-          type: "column",
-          data: [500, 600, 700, 500, 300, 700, 600,500, 600, 700, 500, 300, 700, 600,500, 600, 700, 500, 300, 700, 600,500, 600, 700, 500, 300, 700, 600],
-        },
-        {
-          name: "JUMLAH TOKO",
-          type: "line",
-          data: [600, 700, 800, 600, 500, 800, 700, 600, 700, 800, 600, 500, 800, 700, 600, 700, 800, 600, 500, 800, 700, 600, 700, 800, 600, 500, 800, 700],
-        },
-      ],
-      chart: {
-        height: 350,
-        type: "line",
-        toolbar:{
-          show : false
-      }
-      },
-        stroke: {
-        width: [0, 2],
-      },
-      grid: {
-      show: false,
-      },
-      dataLabels: {
-        enabled: true,
-        position: 'top',
-        formatter: function (val) {
-        return val ;
-      },
-        horizontal: true,
-        offsetX: 0,
-        style: {
-            fontSize: '12px',
-        }
-    },
-      labels: [
-        "Pontianak",
-        "Bandung",
-        "Cikokol",
-        "Manado",
-        "Plumbon",
-        "Cianjur",
-        "Jember",
-        "Parung",
-        "Bekasi",
-        "Lampung",
-        "Banjarmasin",
-        "Batam",
-        "Lombok",
-        "Pekanbaru",
-        "Serang",
-        "Klaten",
-        "Medan",
-        "Makasar",
-        "Bali",
-        "Rembang",
-        "Jambi",
-        "Kotabumi",
-        "Bandung2",
-        "Semarang",
-        "Balaraja",
-        "Cileungsi_2",
-        "Bogor",
-        "Malang",
-        "Cilacap",
-      ],
-      yaxis: {
-            show: false,
-          },
-      xaxis: {
-        type: "String",
-        tickAmount: 30,
-        tickPlacement: 'between',
-      },
-    };
-
-    var chart = new ApexCharts(document.querySelector("#chart-2"), options);
-    chart.render();
-  </script>
 
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
@@ -391,21 +163,19 @@
     <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
-    <!-- ============================================================== -->
-    <!-- This page plugins -->
-    <!-- ============================================================== -->
     <!--morris JavaScript -->
     <script src="plugins/raphael/raphael-min.js"></script>
     <script src="plugins/morrisjs/morris.min.js"></script>
+    <!-- Apex JS -->
+    <script src="js/No-Sales/SKU.js"></script>
+    <script src="js/No-Sales/Branch.js"></script>
     <!-- sparkline chart -->
     <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
     <script src="plugins/sparkline/jquery.charts-sparkline.js"></script>
-    <!-- ============================================================== -->
     <!-- echart -->
     <script src="plugins/echarts/echarts-all.js"></script>
     <script src="plugins/echarts/echarts-init.js"></script>
     <!-- Style switcher -->
-    <!-- ============================================================== -->
     <script src="plugins/styleswitcher/jQuery.style.switcher.js"></script>
 </body>
 
