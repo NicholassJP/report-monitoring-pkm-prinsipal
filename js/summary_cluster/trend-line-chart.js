@@ -51,7 +51,7 @@ const chartWidth  = dynamicWidth < window.innerWidth ? '100%': dynamicWidth;
           curve: "smooth",
         },
         title: {
-          text: "Trend Indikator Project vs LY 2020",
+          text: "TREND INDIKATOR PROJECT vs LY 2020",
           style: {
             fontSize:  '14px',
             fontWeight:  'bold',
