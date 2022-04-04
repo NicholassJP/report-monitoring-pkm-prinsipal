@@ -359,19 +359,12 @@
                 </div>
                 
                 <!-- Nav tabs -->
-                <ul class="nav nav-tabs customtab2" role="tablist">
-                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#content1" role="tab"><span class="hidden-sm-up">JAN-APR 20</span> <span class="hidden-xs-down">JAN-APR 20</span></a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#content2" role="tab"><span class="hidden-sm-up">MAY-AUG 20</i></span> <span class="hidden-xs-down">MAY-AUG 20</span></a> </li>
-                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#content3" role="tab"><span class="hidden-sm-up">SEP-DEC 20</i></span> <span class="hidden-xs-down">SEP-DEC 20</span></a> </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            <span class="hidden-sm-up">Periode 2020</span> <span class="hidden-xs-down">Periode 2020</span>
-                        </a>
-                        <div class="dropdown-menu"> 
-                            <a class="dropdown-item" id="dropdown1-tab" href="#dropdown1" role="tab" data-toggle="tab" aria-controls="dropdown1">JAN-APR 20</a> 
-                            <a class="dropdown-item" id="dropdown2-tab" href="#dropdown2" role="tab" data-toggle="tab" aria-controls="dropdown2">MAY-AUG 20</a>
-                            <a class="dropdown-item" id="dropdown3-tab" href="#dropdown3" role="tab" data-toggle="tab" aria-controls="dropdown2">SEP-DEC 20</a> </div>
-                    </li>
+                <ul class="nav nav-tabs customtab2 style-tab" role="tablist">
+                    <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#content1" role="tab"><span class="hidden-sm-up">High Sales Low Inventory</span> <span class="hidden-xs-down">High Sales Low Inventory</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#content2" role="tab"><span class="hidden-sm-up">High Sales Proper Inventory</i></span> <span class="hidden-xs-down">High Sales Proper Inventory</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#content3" role="tab"><span class="hidden-sm-up">Moderate Sales</i></span> <span class="hidden-xs-down">Moderate Sales</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#content4" role="tab"><span class="hidden-sm-up">No Sales</i></span> <span class="hidden-xs-down">No Sales</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#content5" role="tab"><span class="hidden-sm-up">Total</i></span> <span class="hidden-xs-down">Total</span></a> </li>
                 </ul>
                 <!-- Tab Content -->
                 <div class="tab-content">
@@ -383,7 +376,7 @@
                         <div class="col-lg-12">
                             <div class="card responsive-over">
                                 <div class="card-body">
-                                    <div id="Jan-Apr-20">     
+                                    <div id="High-Sales-Low-Inventory">     
                                     </div>
                                 </div>
                             </div>
@@ -399,7 +392,7 @@
                         <div class="col-lg-12">
                             <div class="card responsive-over">
                                 <div class="card-body">
-                                    <div id="May-Aug-20">     
+                                    <div id="High-Sales-Proper-Inventory">     
                                     </div>
                                 </div>
                             </div>
@@ -414,7 +407,7 @@
                         <div class="col-lg-12">
                             <div class="card responsive-over">
                                 <div class="card-body">
-                                    <div id="Sep-Dec-20">     
+                                    <div id="Moderate-Sales">     
                                     </div>
                                 </div>
                             </div>
@@ -422,30 +415,37 @@
                         <!-- column -->
                         </div>
                     </div>
-
-                    <!-- Drop Down 1 -->
-                    <div class="tab-pane fade" id="dropdown1" role="tabpanel" aria-labelledby="dropdown1-tab">
-                    <!-- Content disini -->
-                      <p>
-                        Dropdown 1
-                      </p>
-                    </div>
-                    <!-- Drop Down 2 -->
-                    <div class="tab-pane fade" id="dropdown2" role="tabpanel" aria-labelledby="dropdown2-tab">
-                    <!-- Content disini -->
-                      <p>
-                        Dropdown 2
-                      </p>
-                    </div>
-                    <!-- Drop Down 3 -->
-                    <div class="tab-pane fade" id="dropdown3" role="tabpanel" aria-labelledby="dropdown3-tab">
-                    <!-- Content disini -->
-                      <p>
-                        Dropdown 3
-                      </p>
-                    </div>
+                    <div class="tab-pane" id="content4" role="tabpanel">
+                        <!-- Chart 4 -->
+                        <div class="row">
+                            <!-- column -->
+                            <div class="col-lg-12">
+                                <div class="card responsive-over">
+                                    <div class="card-body">
+                                        <div id="No-Sales">     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- column -->
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="content5" role="tabpanel">
+                            <!-- Chart 5 -->
+                            <div class="row">
+                                <!-- column -->
+                                <div class="col-lg-12">
+                                    <div class="card responsive-over">
+                                        <div class="card-body">
+                                            <div id="Total">     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- column -->
+                                </div>
+                            </div>
                 </div>
-
                                 <!-- Trend Indikator Project vs LY -->
                                 <div class="row page-titles space-title">
                                     <div class="space-title col-lg-5">
@@ -512,9 +512,11 @@
     <script src="plugins/raphael/raphael-min.js"></script>
     <script src="plugins/morrisjs/morris.min.js"></script>
     <!-- Chart JS yang dipakai -->
-    <script src="js/Trend-Indikator/Jan-Apr-20.js"></script>
-    <script src="js/Trend-Indikator/May-Aug-20.js"></script>
-    <script src="js/Trend-Indikator/Sep-Dec-20.js"></script>
+    <script src="js/Trend-Indikator/High-Sales-Low-Inventory.js"></script>
+    <script src="js/Trend-Indikator/High-Sales-Proper-Inventory.js"></script>
+    <script src="js/Trend-Indikator/Moderate-Sales.js"></script>
+    <script src="js/Trend-Indikator/No-Sales.js"></script>
+    <script src="js/Trend-Indikator/Total.js"></script>
     <script src="js/trend-line-chart.js"></script>
     <!-- sparkline chart -->
     <script src="plugins/sparkline/jquery.sparkline.min.js"></script>

@@ -5032,17 +5032,22 @@ table.dataTable thead .sorting:after {
 .customtab2 li a.nav-link {
   border: 0px;
   margin-right: 3px;
-  color: #67757c;
+  color: #A0A0A0;
+  background-color: #F5F5F5;
+  border-radius: 30px;
+  margin: 10px 0px 10px 8px;
 }
 
 .customtab2 li a.nav-link.active {
-  background: #1976d2;
-  color: #ffffff;
+  background: #9F8400;
+  color: #F5F5F5;
+  border-radius: 30px;
 }
 
 .customtab2 li a.nav-link:hover {
-  color: #ffffff;
-  background: #1976d2;
+  color: #F5F5F5;
+  background: #9F8400;
+  border-radius: 30px;
 }
 
 .progress-bar.active,
