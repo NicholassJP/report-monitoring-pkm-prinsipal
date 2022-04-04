@@ -146,6 +146,6 @@ $( document ).ready(function () {
           },
         };
     
-        var chart = new ApexCharts(document.querySelector("#Total"), options);
+        var chart = new ApexCharts(document.querySelector("#total"), options);
         chart.render();
   });    

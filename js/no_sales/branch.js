@@ -78,5 +78,5 @@ var options = {
   },
 };
 
-var chart = new ApexCharts(document.querySelector("#Branch"), options);
+var chart = new ApexCharts(document.querySelector("#branch"), options);
 chart.render();

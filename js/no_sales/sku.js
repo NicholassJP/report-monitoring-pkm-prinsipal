@@ -47,5 +47,5 @@ show: false,
   },
 };
 
-var chart = new ApexCharts(document.querySelector("#SKU"), options);
+var chart = new ApexCharts(document.querySelector("#sku"), options);
 chart.render();

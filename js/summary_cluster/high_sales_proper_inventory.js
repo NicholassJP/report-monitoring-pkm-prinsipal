@@ -84,7 +84,7 @@ $( document ).ready(function () {
         series: [
           {
             type: "column",
-            data: [1, 6, 7, 5, 3, 7, 6, 5, 6, 7, 5, 3, 7, 6, 5, 6, 7, 5, 3, 7, 6, 5, 6, 5],
+            data: [4, 2, 3, 1, 6, 8, 2, 4, 2, 2, 4, 1, 7, 5, 3, 8, 3, 2, 3, 2, 6, 3, 2, 4],
           },
         ],
         chart: {
@@ -146,6 +146,6 @@ $( document ).ready(function () {
         },
       };
   
-      var chart = new ApexCharts(document.querySelector("#High-Sales-Low-Inventory"), options);
+      var chart = new ApexCharts(document.querySelector("#high_sales_proper_inventory"), options);
       chart.render();
 });    
