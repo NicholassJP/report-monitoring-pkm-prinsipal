@@ -52,7 +52,12 @@ const chartWidth  = dynamicWidth < window.innerWidth ? '100%': dynamicWidth;
         },
         title: {
           text: "Trend Indikator Project vs LY 2020",
-          align: "left",
+          style: {
+            fontSize:  '14px',
+            fontWeight:  'bold',
+            fontFamily:  'HelveticaNeue',
+            color:  '#5A7D8D'
+          },
         },
         grid: {
           show: false,
