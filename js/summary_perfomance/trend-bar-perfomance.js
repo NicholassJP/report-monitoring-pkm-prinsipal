@@ -1,7 +1,8 @@
 // Dashboard 1 Morris-chart
 $( document ).ready(function () {
     "use strict";
-
+    const dynamicWidth = 24 * 50;
+    const chartWidth  = dynamicWidth < window.innerWidth ? '100%': dynamicWidth;
         var options = {
             colors : ['#ED7D39'],
           series: [
@@ -12,6 +13,7 @@ $( document ).ready(function () {
           ],
           chart: {
             height: 350,
+            width: chartWidth,
             type: "line",
             toolbar:{
               show : false

@@ -1,3 +1,4 @@
+
 var options = {
     colors : ['#395FED', '#FF0000'],
   series: [
@@ -14,6 +15,7 @@ var options = {
   ],
   chart: {
     height: 350,
+    width: chartWidth,
     type: "line",
     toolbar:{
       show : false

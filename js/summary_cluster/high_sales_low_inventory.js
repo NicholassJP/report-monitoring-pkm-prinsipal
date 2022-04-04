@@ -3,7 +3,6 @@ $( document ).ready(function () {
   "use strict";
       const dynamicWidth = 24 * 50;
       const chartWidth  = dynamicWidth < window.innerWidth ? '100%': dynamicWidth;
-      console.log(window.innerWidth)
       var options = {
         zoom: {
           enabled: true,

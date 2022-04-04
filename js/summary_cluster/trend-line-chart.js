@@ -1,4 +1,5 @@
-
+const dynamicWidth = 24 * 50;
+const chartWidth  = dynamicWidth < window.innerWidth ? '100%': dynamicWidth;
       var options = {
         series: [
           {
@@ -36,6 +37,7 @@
         ],
         chart: {
           height: 350,
+          width: chartWidth,
           type: "line",
           toolbar: {
             show: false,
